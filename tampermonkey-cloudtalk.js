@@ -11,9 +11,7 @@
 
 function editPhoneLink(element) {
     if(element.href.startsWith('tel:')) {
-        console.log(element.href);
         element.href = element.href.replace(/^tel\:/, 'ct+tel://');
-        console.log(element.href);
     }
 }
 
@@ -22,7 +20,6 @@ const selector = '.TargetInfo-number a';
 let el = document.querySelector(selector);
 if (el) {editPhoneLink(el)}
 new MutationObserver((mutationRecords, observer) => {
-    console.log(mutationRecords);
     Array.from(document.querySelectorAll(selector)).forEach((element) => {
         editPhoneLink(element);
     });

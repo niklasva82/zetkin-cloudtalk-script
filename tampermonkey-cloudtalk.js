@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  Replace the tel: links in Zetkin with CloudTalk-compatible ct+tel://-links
 // @author       Niklas Vanhainen <niklas.vanhainen@zetkin.org>
-// @match        https://call.zetk.in/assignments/*/call
+// @match        https://call.zetk.in/*
 // @icon         https://www.google.com/s2/favicons?domain=zetk.in
 // @grant        none
 // ==/UserScript==
